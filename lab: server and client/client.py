@@ -10,10 +10,12 @@ while True:
 
     # send the message, using the socket
     ### send(__msg___, __destination__)
-    dest = ('127.0.0.1', 12345)
+    dest = ('172.28.140.55', 12345)
     # encode the message into bytes
     msg = msg.encode()
     clientSocket.sendto(msg, dest)
 
     if msg.decode() == 'exit':
         break
+
+    # TASK 2B: receive a response from server
