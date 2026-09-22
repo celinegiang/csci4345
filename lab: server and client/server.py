@@ -17,5 +17,5 @@ while True:
     # print the message
     print(msg.decode())
 
-    if msg == 'exit':
+    if msg.decode() == 'exit':
         break
