@@ -19,3 +19,5 @@ while True:
         break
 
     # TASK 2B: receive a response from server
+    reply, serverAddr = clientSocket.recvfrom(2048)
+    print(reply.decode())
