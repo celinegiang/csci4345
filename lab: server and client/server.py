@@ -4,7 +4,7 @@ from socket import *
 # create a socket
 serverSocket = socket(AF_INET, SOCK_DGRAM)
 # make this socket bound to a port 
-serverSocket.bind(('172.28.173.21', 12345))
+serverSocket.bind(('0.0.0.0', 12345))
 
 # TASK 1: give your server any custom behavior
 def process(msg):

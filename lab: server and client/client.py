@@ -10,7 +10,7 @@ while True:
 
     # send the message, using the socket
     ### send(__msg___, __destination__)
-    dest = ('172.28.140.55', 12345)
+    dest = ('192.168.4.41', 12345)
     # encode the message into bytes
     msg = msg.encode()
     clientSocket.sendto(msg, dest)
